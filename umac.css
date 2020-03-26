@@ -20,7 +20,7 @@ h4 {
 .remark-code-line-highlighted     { background-color: #ffff88; }
 
 .inverse {
-  background-color: #0067A0;
+  background-color: rgb(0, 95, 151);
   color: #ffffff;
   text-shadow: none;
 }
@@ -89,41 +89,27 @@ th, td { padding: 5px; }
 /* Title Page */
 
 .title-slide {
-  background-image: url(https://github.com/AliceAmamiya/xaringan-x-umac/raw/master/umac.png);
-  background-position: 4% 6%;
-  background-size: 35%;
-  background-color: #0067A0;
+  background-image: url(./titleslide.svg), url(./unlibrary.jpg);
+  background-position: bottom, center;
 }
 
-.title-slide .t-text {
-  position: absolute; 
-  top: 30%; 
-  left: 8%; 
-  color: #ffffff; 
-  text-align: left; 
-  padding-top: 0px;
-  margin-top: 0px;
-}
-
+/* H1 fonts */
 .title-slide h1{
   color: #ffffff;
-  font-size: 40px;
+  font-size: 42px;
+  text-shadow: 1px 1px #333;
+  margin-top: -300px;
+  margin-bottom: -10px;
   text-align: left;
-  text-shadow: none;
-  padding-top: 30%;
 }
 
 /* H2 fonts */
 .title-slide h2 {
   color: #ffffff;
   font-size: 28px;
+  text-shadow: 1px 1px #333;
   text-align: left;
   font-weight: 500;
-  text-shadow: none;
-  padding-top: 40%;
-  text-shadow: none;
-  padding-top: 0px;
-  margin-top: 0px;
 }
 
 /* H3 fonts */
@@ -132,7 +118,7 @@ th, td { padding: 5px; }
   font-weight: 300;
   color: #ffffff;
   text-align: left;
-  text-shadow: none;
+  text-shadow: 0.5px 0.5px #333;
   line-height: 0.5em;
 }
 
@@ -141,7 +127,7 @@ th, td { padding: 5px; }
   font-size: 24px;
   font-weight: 300;
   color: #ffffff;
-  text-align: left;
+  text-align: center;
   text-shadow: none;
   line-height: 0.5em;
 }
@@ -150,13 +136,26 @@ th, td { padding: 5px; }
   display: none;
 }
 
-/* Slide Contents */
-.remark-slide-content {
-  border-top: 8px solid #0067A0;
-  border-bottom: 8px solid #0067A0;
-  border-right: 11px solid #0067A0;
-  border-left: 11px solid #0067A0;
-  padding: 1em 2em 1em 2em
+.title-slide .remark-slide-content {
+  display: none;
+}
+
+.banner-top {
+  background-image: url(./banner.svg);
+  background-position: top;
+}
+
+.banner-bottom {
+  background-image: url(./banner.svg);
+  background-position: bottom;
+}
+
+.banner-bottom .remark-slide-number {
+  padding-bottom: 64px
+}
+
+.banner-bottom .footnote {
+  bottom: 5em;
 }
 
 /* University Brand Colors */

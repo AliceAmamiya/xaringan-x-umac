@@ -1,49 +1,66 @@
 ---
-title: "UMAC 澳大"
-subtitle: "a modified Xaringan Theme"
+title: "澳 大 UMAC (another flavor)"
+subtitle: "Presentation Template，現更以Xaringan呈現"
 author: "Ruriko SHEN"
 institute: "Faculty of Education, University of Macau"
 date: "2018/09/13 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: ["umac.css", "umac-fonts.css", "umac-extra.css"]
+    css: ["umac.css", "umac-fonts.css"]
     nature:
-      beforeInit: "macros.js"
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
     seal: true
 ---
-## What's this? 
+## What's this?  這是什麼？
 "UMAC" is a Xaringan<sup>1</sup> theme based on [University of Macau Brand Guidelines (UMBG)](https://www.um.edu.mo/about-um/university-identity.html) with: 
 
-- University logo on title page
+- Nearly the same look of the presentation template
 - Color schemes based on UMBG
-- Full Kaiti.kt[（楷體）] support
+- Chinese fonts.kt[（中文字型）] support
 - Few modifications from my supervisor
 
-.footnote[[1] For more information about "Xaringan", click [here](https://slides.yihui.org/xaringan/).]
+.footnote[[1] For more information about "Xaringan", click [here](https://slides.yihui.org/xaringan/).  ]
 ---
-## How to use it?
+## How to use it? 如何使用？
 Step 1. Put your `Rmd` file and `css` files in the same folder. 
 
 Step 2. Set the `css` part of the YAML metadata in your R Markdown file: 
 
   ```yaml
-  css: ["umac.css", "umac-fonts.css", "umac-extra.css"]
+  css: ["umac.css", "umac-fonts.css"]
   ```
   
 Step 3. Knit and enjoy. 
 
-.center[![:scale 65%](./Pics/Enjoy.jpg)]
+---
+class: banner-bottom
+## Mods: Banner with University Logo
+To show the banner with university icon and logo like the PowerPoint template does, simply change the classes (`banner-bottom` and `banner-top`) applied to each page. 
+  ```rmarkdown
+  class: banner-bottom
+  ## Mods: Banner with University Logo
+  ```
+The top-sided one gose... 
+  
+  ```rmarkdown
+  class: banner-top, middle
+  ## Acknowledgement
+  ```
+---
+class: middle, banner-top
+## Acknowledgement
+This project was inspired by 2 elegent Xaringan themes:  
+.green[TAMU] by Nan-Hung Hsieh ([GitHub](https://github.com/nanhung)) and .green[Chocolate] by Yongfu Liao ([GitHub](https://github.com/liao961120)). 
 ---
 ## Mods: Colors
 > *Colour alone can help strengthen the university's brand and build awareness, so it is critical that the colours are accurately and consistently used accross the university.* 
 
 .pull-left[
-### General Colors
-#### defined in `umac-extra.css`
+#### General Colors
+.umblue[defined in `umac-extra.css`]  
 `.red` .red[Red]  
 `.green` .green[Green]  
 `.blue` .blue[Blue]  
@@ -54,7 +71,7 @@ Step 3. Knit and enjoy.
 `.cyan` .cyan[Cyan]  
 ]
 .pull-right[
-### University Colors
+#### University Colors
 
 `.umblue` .umblue[University Blue]  
 `.uyellow` .uyellow[Brand Color Yellow]  
@@ -63,25 +80,26 @@ Step 3. Knit and enjoy.
 `.ugreen` .ugreen[Brand Color Green]  
 ]
 ---
+class: banner-bottom
 ## Mods: CJK and Kaiti Support
 According to UMBG, 
 
 > **H. Recommended Typefaces**  
 > *Noto Sans CJK TC is recommeded for publications, promotional materials, and websites.*
 
-Therefore, Noto Sans TC (aka. 思源黑體) is the default typeface of this theme. Also, Kaiti is avaliable when you need to quote Chinese contents.
+Noto Sans TC (aka. 思源黑體) is the default typeface of this theme. Kaiti is also avaliable for quoting Chinese contents.
 
 ```rmarkdown
 .kt[固知一死生為虛誕，齊彭殤為妄作。]（《蘭亭集序》）
 ```
 .umblue[.kt[固知一死生為虛誕，齊彭殤為妄作。]（《蘭亭集序》）]
 ---
-class: inverse, center, middle
-少し癖のあるあなたの声 耳を傾け  
-深い安らぎ酔いしれるあたしはかぶとむし  
-琥珀の弓張り月 息切れすら覚える鼓動  
-生涯忘れることはないでしょう  
-.right[aiko - カブトムシ]
+class: inverse, middle
+.kt[
+那兒可真是個好地方，安穩又豁亮……真人擁有不屈的靈魂，活在永恆的時間之中。因此人們不會因為不安而進行卑劣的紛爭，即使意見出現分歧，也會求同存異。亞馬烏羅提的風景更是美得令人起敬，高塔之上是萬里的晴空，清風拂過，沁人心脾。  
+
+.right[——愛梅特賽爾克]
+]
 ---
 ## Mods: Google Fonts
 Of course in some places in the world there's no (legal) way to access Google services including Google Fonts, which may cause trouble when you rendering this theme.  
@@ -94,38 +112,10 @@ css: ["umac.css", "umac-fonts-alt.css", "umac-extra.css"]
 
 .footnote[Google Fonts mirrored by [Loli.net 常用前端公共庫 CDN 服務](https://css.loli.net/)]
 ---
-## Mods: Title Slide ~ 2 Flavors
-> When setting `seal: false` in the YAML header, the first slide of the presentation will not use the information from the YAML header. This is particular helpful to create a title slide fully from scratch using custom HTML div boxes.
+class: center, middle, banner-top
+## ありがとナス
+### 謝謝茄子
+中國澳門氹仔，大學大馬路，  
+澳門大學教育學院 (E33) 某個教室  
+Tel :  (853) 8822 8773  Fax :  (853) 2883 1695
 
-### `.t-text[]`
-
-WIP
-
-.umblue[Sample:]  
-```md
-class: title-slide
-.t-text[
-# R Studio整合框架的理論與實踐
-#### 「寫輪眼(Xaringan)」的領悟之道
-<hr />
-`r format(Sys.Date(), '%B %e, %Y')`  
-サザンオールスターズ]
-```
----
-class: title-slide
-.t-text[
-# R Studio整合框架的理論與實踐
-#### 「寫輪眼(Xaringan)」的領悟之道
-<hr />
-`r format(Sys.Date(), '%B %e, %Y')`  
-サザンオールスターズ]
----
-class: middle
-## Acknowledgement
-This project was inspired by 2 elegent Xaringan themes:  
-.green[TAMU] by Nan-Hung Hsieh ([GitHub](https://github.com/nanhung)) and .green[Chocolate] by Yongfu Liao ([GitHub](https://github.com/liao961120)). 
----
-class: inverse, top, center
-background-image: url(./Pics/CNY.jpg)
-background-size: contain
-## This is the last slide. 
