@@ -89,7 +89,7 @@ th, td { padding: 5px; }
 /* Title Page */
 
 .title-slide {
-  background-image: url(./titleslide.svg), url(./unlibrary.jpg);
+  background-image: url(https://raw.githubusercontent.com/AliceAmamiya/xaringan-x-umac/master/resources/titleslide.svg), url(https://raw.githubusercontent.com/AliceAmamiya/xaringan-x-umac/master/resources/umlibrary.jpg);
   background-position: bottom, center;
 }
 
@@ -141,12 +141,12 @@ th, td { padding: 5px; }
 }
 
 .banner-top {
-  background-image: url(./banner.svg);
+  background-image: url(https://raw.githubusercontent.com/AliceAmamiya/xaringan-x-umac/master/resources/banner.svg);
   background-position: top;
 }
 
 .banner-bottom {
-  background-image: url(./banner.svg);
+  background-image: url(https://raw.githubusercontent.com/AliceAmamiya/xaringan-x-umac/master/resources/banner.svg);
   background-position: bottom;
 }
 
