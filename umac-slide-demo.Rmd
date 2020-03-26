@@ -14,7 +14,7 @@ output:
       countIncrementalSlides: false
     seal: true
 ---
-## What's this?  這是什麼？
+# What's this?  這是什麼？
 "UMAC" is a Xaringan<sup>1</sup> theme based on [University of Macau Brand Guidelines (UMBG)](https://www.um.edu.mo/about-um/university-identity.html) with: 
 
 - Nearly the same look of the presentation template
@@ -24,7 +24,7 @@ output:
 
 .footnote[[1] For more information about "Xaringan", click [here](https://slides.yihui.org/xaringan/).  ]
 ---
-## How to use it? 如何使用？
+# How to use it? 如何使用？
 Step 1. Put your `Rmd` file and `css` files in the same folder. 
 
 Step 2. Set the `css` part of the YAML metadata in your R Markdown file: 
@@ -37,7 +37,7 @@ Step 3. Knit and enjoy.
 
 ---
 class: banner-bottom
-## Mods: Banner with University Logo
+# Mods: Banner with University Logo
 To show the banner with university icon and logo like the PowerPoint template does, simply change the classes (`banner-bottom` and `banner-top`) applied to each page. 
   ```rmarkdown
   class: banner-bottom
@@ -51,16 +51,16 @@ The top-sided one gose...
   ```
 ---
 class: middle, banner-top
-## Acknowledgement
+# Acknowledgement
 This project was inspired by 2 elegent Xaringan themes:  
 .green[TAMU] by Nan-Hung Hsieh ([GitHub](https://github.com/nanhung)) and .green[Chocolate] by Yongfu Liao ([GitHub](https://github.com/liao961120)). 
 ---
-## Mods: Colors
+# Mods: Colors
 > *Colour alone can help strengthen the university's brand and build awareness, so it is critical that the colours are accurately and consistently used accross the university.* 
 
 .pull-left[
 #### General Colors
-.umblue[defined in `umac-extra.css`]  
+defined in `umac-extra.css`  
 `.red` .red[Red]  
 `.green` .green[Green]  
 `.blue` .blue[Blue]  
@@ -81,7 +81,7 @@ This project was inspired by 2 elegent Xaringan themes:
 ]
 ---
 class: banner-bottom
-## Mods: CJK and Kaiti Support
+# Mods: CJK and Kaiti Support
 According to UMBG, 
 
 > **H. Recommended Typefaces**  
@@ -101,8 +101,8 @@ class: inverse, middle
 .right[——愛梅特賽爾克]
 ]
 ---
-## Mods: Google Fonts
-Of course in some places in the world there's no (legal) way to access Google services including Google Fonts, which may cause trouble when you rendering this theme.  
+# Mods: Google Fonts
+Of course in some places in the world there's no (legal) way to access Google services including Google Fonts, which may cause trouble when your browser rendering this theme.  
 <br />
 But take it easy! Simply replace `umac-fonts.css` with `umac-fonts-alt.css` in YAML metadata, and, emmmm, there's no step 2.  
 
@@ -112,10 +112,15 @@ css: ["umac.css", "umac-fonts-alt.css", "umac-extra.css"]
 
 .footnote[Google Fonts mirrored by [Loli.net 常用前端公共庫 CDN 服務](https://css.loli.net/)]
 ---
+# Header 1
+## Header 2
+### Header 3
+#### Header 4
+##### Header 5
+---
 class: center, middle, banner-top
-## ありがとナス
-### 謝謝茄子
+# ありがとナス
+## 謝謝茄子
 中國澳門氹仔，大學大馬路，  
 澳門大學教育學院 (E33) 某個教室  
 Tel :  (853) 8822 8773  Fax :  (853) 2883 1695
-

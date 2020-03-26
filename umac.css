@@ -3,8 +3,17 @@ a, a > code {
   text-decoration: none;
 }
 
+
 h1, h2, h3, h4 {
-  color: rgb(0, 44, 85)
+  color: rgb(0, 44, 85);
+}
+
+.remark-slide-content h2 {
+  font-size: 38px;
+}
+
+.remark-slide-content h3 {
+  font-size: 30px;
 }
 
 h4 {
@@ -131,6 +140,11 @@ th, td { padding: 5px; }
   text-align: center;
   text-shadow: none;
   line-height: 0.5em;
+}
+
+
+.remark-slide-content h1 {
+font-size: 42px;
 }
 
 .title-slide .remark-slide-number {
